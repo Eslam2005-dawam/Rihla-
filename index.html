@@ -1,0 +1,1318 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover Egypt with Rihla. Explore popular bus routes, unforgettable destinations, and comfortable travel experiences."
+    />
+    <title>Rihla | Discover Egypt</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/home.css" />
+  </head>
+  <body>
+    <header class="site-header" id="home">
+      <nav class="navigation">
+        <a class="brand" href="./index.html"
+          ><img
+            src="./imgs/home/logo.svg"
+            width="158"
+            height="56"
+            alt="Rihla Egypt Travel"
+        /></a>
+        <div class="nav-links" id="nav-links">
+          <a class="active" href="#home">Home</a><a href="#trips">Trips</a
+          ><a href="./login.html">My Bookings</a>
+        </div>
+        <div class="nav-actions">
+          <a class="button button-outline signin" href="./login.html"
+            ><img
+              class="icon"
+              src="./icons/home/person-345f71.svg"
+              width="20"
+              height="20"
+              alt=""
+            />Signin</a
+          ><a class="button button-primary" href="#trip-search"
+            ><img
+              class="icon"
+              src="./icons/home/geo-alt-ffffff.svg"
+              width="20"
+              height="20"
+              alt=""
+            />Book Now</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero">
+        <img
+          class="hero-image"
+          src="./imgs/heroImg.jpg"
+          alt="Camel riders in front of the pyramids of Giza at sunset"
+        />
+        <div class="hero-shade"></div>
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <span class="hero-badge"
+              ><span class="badge-dot"></span>Egypt's #1 Travel Platform</span
+            >
+            <h1 id="hero-heading">
+              Discover Egypt's Best<br /><span class="orange-text"
+                >Travel Experiences</span
+              >
+            </h1>
+            <p class="hero-description">
+              Journey through ancient wonders and modern marvels. <br />Premium
+              bus travel connecting Egypt's most iconic destinations<br
+                class="desktop-break"
+              />
+              with unparalleled comfort.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#trips"
+                ><img
+                  class="icon"
+                  src="./icons/home/search-ffffff.svg"
+                  width="20"
+                  height="20"
+                  alt=""
+                />Explore Trips</a
+              ><a class="button button-glass" href="./login.html"
+                ><img
+                  class="icon"
+                  src="./icons/home/geo-alt-ffffff.svg"
+                  width="20"
+                  height="20"
+                  alt=""
+                />My Booking</a
+              >
+            </div>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-bar blue"></span>
+              <div><strong>48+</strong><span>Active Routes</span></div>
+            </div>
+            <div class="stat">
+              <span class="stat-bar green"></span>
+              <div><strong>120+</strong><span>Daily Trips</span></div>
+            </div>
+            <div class="stat">
+              <span class="stat-bar orange"></span>
+              <div><strong>4.8★</strong><span>Avg Rating</span></div>
+            </div>
+          </div>
+        </div>
+        <form class="trip-search" id="trip-search" action="#trips">
+          <label class="search-field"
+            ><img
+              class="icon"
+              src="./icons/home/geo-alt-f47737.svg"
+              width="20"
+              height="20"
+              alt="" /><input
+              id="destination"
+              name="destination"
+              type="text"
+              placeholder="Where to?"
+          /></label>
+          <label class="search-field date-field"
+            ><img
+              class="icon"
+              src="./icons/home/calendar4-f47737.svg"
+              width="20"
+              height="20"
+              alt="" /><input id="travel-date" name="date" type="date"
+          /></label>
+          <label class="search-field traveler-field"
+            ><img
+              class="icon"
+              src="./icons/home/people-f47737.svg"
+              width="20"
+              height="20"
+              alt=""
+            /><select id="travelers" name="travelers">
+              <option value="1">1 Traveler</option>
+              <option value="2">2 Travelers</option>
+              <option value="3">3 Travelers</option>
+              <option value="4">4 Travelers</option>
+              <option value="5">5 Travelers</option>
+              <option value="6">6 Travelers</option>
+            </select></label
+          >
+          <button class="button button-primary" type="submit">
+            <img
+              class="icon"
+              src="./icons/home/search-ffffff.svg"
+              width="20"
+              height="20"
+              alt=""
+            />Search Trips
+          </button>
+        </form>
+      </section>
+      <section class="routes section-shell" id="trips">
+        <div class="section-heading">
+          <span class="section-badge"
+            ><img
+              class="icon"
+              src="./icons/home/star-fill-f58345.svg"
+              width="20"
+              height="20"
+              alt=""
+            />Featured Trips</span
+          >
+          <h2 id="routes-heading">Popular Routes Across Egypt</h2>
+          <p>
+            Hand-picked journeys to Egypt's most iconic destinations<br />with
+            premium comfort and unbeatable prices.
+          </p>
+        </div>
+        <div class="trip-list" id="trip-list">
+          <div class="trip-card">
+            <img
+              class="trip-photo"
+              src="./imgs/luxor.jpg"
+              alt="Ancient carved statues at Luxor temple"
+              width="413"
+              height="220"
+            />
+            <div class="trip-card-body">
+              <div class="trip-top">
+                <div>
+                  <h3>Cairo → Luxor</h3>
+                  <p>08:00 AM · VIP Sleeper</p>
+                </div>
+                <div class="price">
+                  <strong>$45</strong><span>per seat</span>
+                </div>
+              </div>
+              <div class="trip-meta">
+                <div class="rating">
+                  <span class="stars"
+                    ><img
+                      class="icon"
+                      src="./icons/home/star-fill-f58345.svg"
+                      width="20"
+                      height="20"
+                      alt="" /><img
+                      class="icon"
+                      src="./icons/home/star-fill-f58345.svg"
+                      width="20"
+                      height="20"
+                      alt="" /><img
+                      class="icon"
+                      src="./icons/home/star-fill-f58345.svg"
+                      width="20"
+                      height="20"
+                      alt="" /><img
+                      class="icon"
+                      src="./icons/home/star-fill-f58345.svg"
+                      width="20"
+                      height="20"
+                      alt="" /><img
+                      class="icon"
+                      src="./icons/home/star-d1cec8.svg"
+                      width="20"
+                      height="20"
+                      alt="" /></span
+                  ><span>4.8</span><small>(234)</small>
+                </div>
+                <span class="seats">18 seats left</span>
+              </div>
+              <div class="trip-card-actions">
+                <button class="button button-outline" type="button">
+                  View Details</button
+                ><a class="button button-primary" href="./login.html"
+                  >Book Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="trip-card">
+            <img
+              class="trip-photo"
+              src="./imgs/Aswan.jpg"
+              alt="Palm trees and desert mountains beside the Nile in Aswan"
+              width="413"
+              height="220"
+            />
+            <div class="trip-card-body">
+              <div class="trip-top">
+                <div>
+                  <h3>Cairo → Aswan</h3>
+                  <p>07:00 AM · VIP Sleeper</p>
+                </div>
+                <div class="price">
+                  <strong>$45</strong><span>per seat</span>
+                </div>
+              </div>
+              <div class="trip-meta">
+                <div class="rating">
+                  <span class="stars"
+                    ><img
+                      class="icon"
+                      src="./icons/home/star-fill-f58345.svg"
+                      width="20"
+                      height="20"
+                      alt="" /><img
+                      class="icon"
+                      src="./icons/home/star-fill-f58345.svg"
+                      width="20"
+                      height="20"
+                      alt="" /><img
+                      class="icon"
+                      src="./icons/home/star-fill-f58345.svg"
+                      width="20"
+                      height="20"
+                      alt="" /><img
+                      class="icon"
+                      src="./icons/home/star-fill-f58345.svg"
+                      width="20"
+                      height="20"
+                      alt="" /><img
+                      class="icon"
+                      src="./icons/home/star-d1cec8.svg"
+                      width="20"
+                      height="20"
+                      alt="" /></span
+                  ><span>4.8</span><small>(234)</small>
+                </div>
+                <span class="seats">18 seats left</span>
+              </div>
+              <div class="trip-card-actions">
+                <button class="button button-outline" type="button">
+                  View Details</button
+                ><a class="button button-primary" href="./login.html"
+                  >Book Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="trip-card">
+            <img
+              class="trip-photo"
+              src="./imgs/hurghada.jpg"
+              alt="Golden sunset over the water"
+              width="413"
+              height="220"
+            />
+            <div class="trip-card-body">
+              <div class="trip-top">
+                <div>
+                  <h3>Cairo → Hurghada</h3>
+                  <p>07:00 AM · VIP Sleeper</p>
+                </div>
+                <div class="price">
+                  <strong>$45</strong><span>per seat</span>
+                </div>
+              </div>
+              <div class="trip-meta">
+                <div class="rating">
+                  <span class="stars"
+                    ><img
+                      class="icon"
+                      src="./icons/home/star-fill-f58345.svg"
+                      width="20"
+                      height="20"
+                      alt="" /><img
+                      class="icon"
+                      src="./icons/home/star-fill-f58345.svg"
+                      width="20"
+                      height="20"
+                      alt="" /><img
+                      class="icon"
+                      src="./icons/home/star-fill-f58345.svg"
+                      width="20"
+                      height="20"
+                      alt="" /><img
+                      class="icon"
+                      src="./icons/home/star-fill-f58345.svg"
+                      width="20"
+                      height="20"
+                      alt="" /><img
+                      class="icon"
+                      src="./icons/home/star-d1cec8.svg"
+                      width="20"
+                      height="20"
+                      alt="" /></span
+                  ><span>4.8</span><small>(234)</small>
+                </div>
+                <span class="seats">18 seats left</span>
+              </div>
+              <div class="trip-card-actions">
+                <button class="button button-outline" type="button">
+                  View Details</button
+                ><a class="button button-primary" href="./login.html"
+                  >Book Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="trip-card">
+            <img
+              class="trip-photo"
+              src="./imgs/home/sunset.jpg"
+              alt="Sunset over the Egyptian coastline"
+              width="413"
+              height="220"
+            />
+            <div class="trip-card-body">
+              <div class="trip-top">
+                <div>
+                  <h3>Cairo → Luxor</h3>
+                  <p>08:00 AM · VIP Sleeper</p>
+                </div>
+                <div class="price">
+                  <strong>$45</strong><span>per seat</span>
+                </div>
+              </div>
+              <div class="trip-meta">
+                <div class="rating">
+                  <span class="stars"
+                    ><img
+                      class="icon"
+                      src="./icons/home/star-fill-f58345.svg"
+                      width="20"
+                      height="20"
+                      alt="" /><img
+                      class="icon"
+                      src="./icons/home/star-fill-f58345.svg"
+                      width="20"
+                      height="20"
+                      alt="" /><img
+                      class="icon"
+                      src="./icons/home/star-fill-f58345.svg"
+                      width="20"
+                      height="20"
+                      alt="" /><img
+                      class="icon"
+                      src="./icons/home/star-fill-f58345.svg"
+                      width="20"
+                      height="20"
+                      alt="" /><img
+                      class="icon"
+                      src="./icons/home/star-d1cec8.svg"
+                      width="20"
+                      height="20"
+                      alt="" /></span
+                  ><span>4.8</span><small>(234)</small>
+                </div>
+                <span class="seats">18 seats left</span>
+              </div>
+              <div class="trip-card-actions">
+                <button class="button button-outline" type="button">
+                  View Details</button
+                ><a class="button button-primary" href="./login.html"
+                  >Book Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="trip-card">
+            <img
+              class="trip-photo"
+              src="./imgs/home/siwa.jpg"
+              alt="White desert rock formations near Siwa"
+              width="413"
+              height="220"
+            />
+            <div class="trip-card-body">
+              <div class="trip-top">
+                <div>
+                  <h3>Cairo → Siwa</h3>
+                  <p>07:00 AM · VIP Sleeper</p>
+                </div>
+                <div class="price">
+                  <strong>$45</strong><span>per seat</span>
+                </div>
+              </div>
+              <div class="trip-meta">
+                <div class="rating">
+                  <span class="stars"
+                    ><img
+                      class="icon"
+                      src="./icons/home/star-fill-f58345.svg"
+                      width="20"
+                      height="20"
+                      alt="" /><img
+                      class="icon"
+                      src="./icons/home/star-fill-f58345.svg"
+                      width="20"
+                      height="20"
+                      alt="" /><img
+                      class="icon"
+                      src="./icons/home/star-fill-f58345.svg"
+                      width="20"
+                      height="20"
+                      alt="" /><img
+                      class="icon"
+                      src="./icons/home/star-fill-f58345.svg"
+                      width="20"
+                      height="20"
+                      alt="" /><img
+                      class="icon"
+                      src="./icons/home/star-d1cec8.svg"
+                      width="20"
+                      height="20"
+                      alt="" /></span
+                  ><span>4.8</span><small>(234)</small>
+                </div>
+                <span class="seats">18 seats left</span>
+              </div>
+              <div class="trip-card-actions">
+                <button class="button button-outline" type="button">
+                  View Details</button
+                ><a class="button button-primary" href="./login.html"
+                  >Book Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="trip-card">
+            <img
+              class="trip-photo"
+              src="./imgs/home/nile.jpg"
+              alt="A felucca sailing on the Nile"
+              width="413"
+              height="220"
+            />
+            <div class="trip-card-body">
+              <div class="trip-top">
+                <div>
+                  <h3>Luxor → Aswan</h3>
+                  <p>07:00 AM · VIP Sleeper</p>
+                </div>
+                <div class="price">
+                  <strong>$45</strong><span>per seat</span>
+                </div>
+              </div>
+              <div class="trip-meta">
+                <div class="rating">
+                  <span class="stars"
+                    ><img
+                      class="icon"
+                      src="./icons/home/star-fill-f58345.svg"
+                      width="20"
+                      height="20"
+                      alt="" /><img
+                      class="icon"
+                      src="./icons/home/star-fill-f58345.svg"
+                      width="20"
+                      height="20"
+                      alt="" /><img
+                      class="icon"
+                      src="./icons/home/star-fill-f58345.svg"
+                      width="20"
+                      height="20"
+                      alt="" /><img
+                      class="icon"
+                      src="./icons/home/star-fill-f58345.svg"
+                      width="20"
+                      height="20"
+                      alt="" /><img
+                      class="icon"
+                      src="./icons/home/star-d1cec8.svg"
+                      width="20"
+                      height="20"
+                      alt="" /></span
+                  ><span>4.8</span><small>(234)</small>
+                </div>
+                <span class="seats">18 seats left</span>
+              </div>
+              <div class="trip-card-actions">
+                <button class="button button-outline" type="button">
+                  View Details</button
+                ><a class="button button-primary" href="./login.html"
+                  >Book Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-action">
+          <a class="button button-outline" href="#trips"
+            >View All Trips<img
+              class="icon"
+              src="./icons/home/geo-alt-345f71.svg"
+              width="20"
+              height="20"
+              alt=""
+          /></a>
+        </div>
+      </section>
+      <section class="benefits" id="about">
+        <div class="benefits-circle"></div>
+        <div class="benefits-inner">
+          <div class="section-heading">
+            <span class="section-badge"
+              ><img
+                class="icon"
+                src="./icons/home/star-fill-f58345.svg"
+                width="20"
+                height="20"
+                alt=""
+              />Why Choose Us</span
+            >
+            <h2 id="benefits-heading">Travel Smarter With EgyTrips</h2>
+            <p>
+              Everything you need for a seamless, comfortable Egyptian<br />adventure
+              — all in one platform.
+            </p>
+          </div>
+          <div class="benefit-list">
+            <div class="benefit-card">
+              <span class="benefit-icon bus"
+                ><img
+                  class="icon"
+                  src="./icons/home/bus-front-f06a25.svg"
+                  width="20"
+                  height="20"
+                  alt=""
+              /></span>
+              <h3>Comfortable Buses</h3>
+              <p>
+                VIP sleeper seats, climate control, and spacious legroom for
+                every journey.
+              </p>
+            </div>
+            <div class="benefit-card">
+              <span class="benefit-icon booking"
+                ><img
+                  class="icon"
+                  src="./icons/home/send-4898b2.svg"
+                  width="20"
+                  height="20"
+                  alt=""
+              /></span>
+              <h3>Easy Booking</h3>
+              <p>
+                Book your seat in under 2 minutes with our streamlined booking
+                process.
+              </p>
+            </div>
+            <div class="benefit-card">
+              <span class="benefit-icon secure"
+                ><img
+                  class="icon"
+                  src="./icons/home/shield-ff3c4d.svg"
+                  width="20"
+                  height="20"
+                  alt=""
+              /></span>
+              <h3>Secure Payments</h3>
+              <p>
+                Bank-grade security protects every transaction. Your data is
+                always safe.
+              </p>
+            </div>
+            <div class="benefit-card">
+              <span class="benefit-icon destination"
+                ><img
+                  class="icon"
+                  src="./icons/home/geo-alt-e9b84b.svg"
+                  width="20"
+                  height="20"
+                  alt=""
+              /></span>
+              <h3>Best Destinations</h3>
+              <p>
+                Carefully curated routes to Egypt's most breathtaking cities and
+                landmarks.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="destinations section-shell" id="destinations">
+        <div class="section-heading">
+          <span class="section-badge"
+            ><img
+              class="icon"
+              src="./icons/home/geo-alt-f47737.svg"
+              width="20"
+              height="20"
+              alt=""
+            />Top Destinations</span
+          >
+          <h2 id="destinations-heading">
+            Featured <span class="orange-text">Destinations</span>
+          </h2>
+          <p>
+            From ancient pyramids to turquoise beaches, explore<br />Egypt's
+            most breathtaking destinations
+          </p>
+        </div>
+        <div class="destination-list" id="destination-list">
+          <a class="destination-card" href="#trips">
+            <img
+              src="./imgs/home/giza.jpg"
+              alt="The three pyramids of Giza beneath a blue sky"
+              width="413"
+              height="360"
+            />
+            <div class="destination-shade"></div>
+            <span class="heritage">Heritage</span>
+            <div class="destination-info">
+              <div class="rating">
+                <span class="stars"
+                  ><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /><img
+                    class="icon"
+                    src="./icons/home/star-d1cec8.svg"
+                    width="20"
+                    height="20"
+                    alt="" /></span
+                ><small>(1,240)</small>
+              </div>
+              <h3>Giza and Cairo</h3>
+              <p>Pyramids, Sphinx and Vibrant City Life</p>
+              <span>12 trips available →</span>
+            </div>
+          </a>
+          <a class="destination-card" href="#trips">
+            <img
+              src="./imgs/home/destination-sunset.jpg"
+              alt="A golden sunset over the sea"
+              width="413"
+              height="360"
+            />
+            <div class="destination-shade"></div>
+            <span class="heritage">Heritage</span>
+            <div class="destination-info">
+              <div class="rating">
+                <span class="stars"
+                  ><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /><img
+                    class="icon"
+                    src="./icons/home/star-d1cec8.svg"
+                    width="20"
+                    height="20"
+                    alt="" /></span
+                ><small>(1,240)</small>
+              </div>
+              <h3>Giza and Cairo</h3>
+              <p>Pyramids, Sphinx and Vibrant City Life</p>
+              <span>12 trips available →</span>
+            </div>
+          </a>
+          <a class="destination-card" href="#trips">
+            <img
+              src="./imgs/home/red-sea.jpg"
+              alt="Palm trees and blue waters on the Egyptian coast"
+              width="413"
+              height="360"
+            />
+            <div class="destination-shade"></div>
+            <span class="heritage">Heritage</span>
+            <div class="destination-info">
+              <div class="rating">
+                <span class="stars"
+                  ><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" />
+                  <img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /><img
+                    class="icon"
+                    src="./icons/home/star-d1cec8.svg"
+                    width="20"
+                    height="20"
+                    alt="" /></span
+                ><small>(1,240)</small>
+              </div>
+              <h3>Giza and Cairo</h3>
+              <p>Pyramids, Sphinx and Vibrant City Life</p>
+              <span>12 trips available →</span>
+            </div>
+          </a>
+          <a class="destination-card" href="#trips">
+            <img
+              src="./imgs/home/karnak.jpg"
+              alt="Painted columns and hieroglyphs inside an ancient temple"
+              width="413"
+              height="360"
+            />
+            <div class="destination-shade"></div>
+            <span class="heritage">Heritage</span>
+            <div class="destination-info">
+              <div class="rating">
+                <span class="stars"
+                  ><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /><img
+                    class="icon"
+                    src="./icons/home/star-d1cec8.svg"
+                    width="20"
+                    height="20"
+                    alt="" /></span
+                ><small>(1,240)</small>
+              </div>
+              <h3>Giza and Cairo</h3>
+              <p>Pyramids, Sphinx and Vibrant City Life</p>
+              <span>12 trips available →</span>
+            </div>
+          </a>
+          <a class="destination-card" href="#trips">
+            <img
+              src="./imgs/home/philae.jpg"
+              alt="A temple on the banks of the Nile in Aswan"
+              width="413"
+              height="360"
+            />
+            <div class="destination-shade"></div>
+            <span class="heritage">Heritage</span>
+            <div class="destination-info">
+              <div class="rating">
+                <span class="stars"
+                  ><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /><img
+                    class="icon"
+                    src="./icons/home/star-d1cec8.svg"
+                    width="20"
+                    height="20"
+                    alt="" /></span
+                ><small>(1,240)</small>
+              </div>
+              <h3>Giza and Cairo</h3>
+              <p>Pyramids, Sphinx and Vibrant City Life</p>
+              <span>12 trips available →</span>
+            </div>
+          </a>
+          <a class="destination-card" href="#trips">
+            <img
+              src="./imgs/home/harbor.jpg"
+              alt="Boats in a turquoise Egyptian harbor"
+              width="413"
+              height="360"
+            />
+            <div class="destination-shade"></div>
+            <span class="heritage">Heritage</span>
+            <div class="destination-info">
+              <div class="rating">
+                <span class="stars"
+                  ><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /><img
+                    class="icon"
+                    src="./icons/home/star-d1cec8.svg"
+                    width="20"
+                    height="20"
+                    alt="" /></span
+                ><small>(1,240)</small>
+              </div>
+              <h3>Giza and Cairo</h3>
+              <p>Pyramids, Sphinx and Vibrant City Life</p>
+              <span>12 trips available →</span>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section class="adventure section-shell">
+        <div class="adventure-circle"></div>
+        <div class="adventure-art">
+          <img
+            src="./imgs/home/adventure.png"
+            width="918"
+            height="852"
+            alt="Egyptian pyramids with postcards of a temple and a Nile sailing boat"
+          />
+        </div>
+        <div class="adventure-content">
+          <h2 id="adventure-heading">
+            Ready for Your Egyptian<br />Adventure?
+          </h2>
+          <p>
+            Join 50,000+ travelers who have already discovered the<br />magic of
+            Egypt with us. Book your trip today.
+          </p>
+          <a class="button button-primary" href="#trip-search"
+            >Book a Trip<img
+              class="icon"
+              src="./icons/home/arrow-right-ffffff.svg"
+              width="20"
+              height="20"
+              alt=""
+          /></a>
+        </div>
+      </section>
+      <section class="stories section-shell">
+        <div class="section-heading">
+          <span class="section-badge"
+            ><img
+              class="icon"
+              src="./icons/home/quote-e76f51.svg"
+              width="20"
+              height="20"
+              alt=""
+            />Traveler Stories</span
+          >
+          <h2 id="stories-heading">
+            What Our Travelers <span class="orange-text">Say</span>
+          </h2>
+          <p>Real stories from people who explored Egypt with us.</p>
+        </div>
+        <div class="story-list" id="story-list">
+          <div class="story-card">
+            <span class="quote-icon"
+              ><img
+                class="icon"
+                src="./icons/home/quote-e76f51.svg"
+                width="20"
+                height="20"
+                alt=""
+            /></span>
+            <p class="story-text">
+              “EgyTrips made our Cairo to Luxor journey absolutely magical. The
+              VIP sleeper bus was immaculate, the seats were incredibly
+              comfortable, and the on-board service was top notch. Will
+              definitely book again!”
+            </p>
+            <div class="story-person">
+              <img
+                src="./imgs/home/sarah.jpg"
+                width="40"
+                height="40"
+                alt="Sarah"
+              />
+              <div class="person-name">
+                <strong>Sarah</strong><span>Travel Blogger</span>
+              </div>
+              <div class="story-rating">
+                <span class="stars"
+                  ><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /></span
+                ><span>Cairo → Luxor</span>
+              </div>
+            </div>
+          </div>
+          <div class="story-card">
+            <span class="quote-icon"
+              ><img
+                class="icon"
+                src="./icons/home/quote-e76f51.svg"
+                width="20"
+                height="20"
+                alt=""
+            /></span>
+            <p class="story-text">
+              “EgyTrips made our Cairo to Luxor journey absolutely magical. The
+              VIP sleeper bus was immaculate, the seats were incredibly
+              comfortable, and the on-board service was top notch. Will
+              definitely book again!”
+            </p>
+            <div class="story-person">
+              <img
+                src="./imgs/home/sarah.jpg"
+                width="40"
+                height="40"
+                alt="Sarah"
+              />
+              <div class="person-name">
+                <strong>Sarah</strong><span>Travel Blogger</span>
+              </div>
+              <div class="story-rating">
+                <span class="stars"
+                  ><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /></span
+                ><span>Cairo → Luxor</span>
+              </div>
+            </div>
+          </div>
+          <div class="story-card">
+            <span class="quote-icon"
+              ><img
+                class="icon"
+                src="./icons/home/quote-e76f51.svg"
+                width="20"
+                height="20"
+                alt=""
+            /></span>
+            <p class="story-text">
+              “EgyTrips made our Cairo to Luxor journey absolutely magical. The
+              VIP sleeper bus was immaculate, the seats were incredibly
+              comfortable, and the on-board service was top notch. Will
+              definitely book again!”
+            </p>
+            <div class="story-person">
+              <img
+                src="./imgs/home/sarah.jpg"
+                width="40"
+                height="40"
+                alt="Sarah"
+              />
+              <div class="person-name">
+                <strong>Sarah</strong><span>Travel Blogger</span>
+              </div>
+              <div class="story-rating">
+                <span class="stars"
+                  ><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /></span
+                ><span>Cairo → Luxor</span>
+              </div>
+            </div>
+          </div>
+          <div class="story-card">
+            <span class="quote-icon"
+              ><img
+                class="icon"
+                src="./icons/home/quote-e76f51.svg"
+                width="20"
+                height="20"
+                alt=""
+            /></span>
+            <p class="story-text">
+              “EgyTrips made our Cairo to Luxor journey absolutely magical. The
+              VIP sleeper bus was immaculate, the seats were incredibly
+              comfortable, and the on-board service was top notch. Will
+              definitely book again!”
+            </p>
+            <div class="story-person">
+              <img
+                src="./imgs/home/sarah.jpg"
+                width="40"
+                height="40"
+                alt="Sarah"
+              />
+              <div class="person-name">
+                <strong>Sarah</strong><span>Travel Blogger</span>
+              </div>
+              <div class="story-rating">
+                <span class="stars"
+                  ><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /><img
+                    class="icon"
+                    src="./icons/home/star-fill-f58345.svg"
+                    width="20"
+                    height="20"
+                    alt="" /></span
+                ><span>Cairo → Luxor</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer" id="contact">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#home"
+            ><img
+              src="./imgs/home/logo-light.svg"
+              width="158"
+              height="56"
+              alt="Rihla Egypt Travel"
+          /></a>
+          <p>
+            Egypt's premier travel platform,<br />connecting you to the most<br />beautiful
+            destinations across the<br />land of the pharaohs.
+          </p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/"
+              ><img
+                class="icon"
+                src="./icons/home/facebook-ffffff.svg"
+                width="20"
+                height="20"
+                alt="Facebook" /></a
+            ><a href="https://twitter.com/"
+              ><img
+                class="icon"
+                src="./icons/home/twitter-ffffff.svg"
+                width="20"
+                height="20"
+                alt="Twitter" /></a
+            ><a href="https://www.instagram.com/"
+              ><img
+                class="icon"
+                src="./icons/home/instagram-ffffff.svg"
+                width="20"
+                height="20"
+                alt="Instagram" /></a
+            ><a href="https://www.youtube.com/"
+              ><img
+                class="icon"
+                src="./icons/home/youtube-ffffff.svg"
+                width="20"
+                height="20"
+                alt="YouTube"
+            /></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <a href="#home">Home</a><a href="#trips">All Trips</a
+          ><a href="./login.html">My Bookings</a><a href="#about">About Us</a
+          ><a href="#contact">Contact</a>
+        </div>
+        <div class="footer-column">
+          <h3>Top Destinations</h3>
+          <a href="#trips">Luxor</a><a href="#trips">Aswan</a
+          ><a href="#trips">Hurghada</a><a href="#trips">Siwa Oasis</a
+          ><a href="#destinations">Alexandria</a
+          ><a href="#destinations">Sharm El-Sheikh</a>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <a
+            class="contact-line"
+            href="https://maps.google.com/?q=15+Tahrir+Square+Cairo+Egypt"
+            ><img
+              class="icon contact-icon"
+              src="./icons/home/geo-alt-f4a261.svg"
+              width="20"
+              height="20"
+              alt=""
+            /><span>15 Tahrir Square, Cairo,<br />Egypt</span></a
+          ><a class="contact-line" href="mailto:hello@egytrips.com"
+            ><img
+              class="icon contact-icon"
+              src="./icons/home/envelope-f4a261.svg"
+              width="20"
+              height="20"
+              alt=""
+            />hello@egytrips.com</a
+          ><a class="contact-line" href="tel:+201001234567"
+            ><img
+              class="icon contact-icon"
+              src="./icons/home/telephone-f4a261.svg"
+              width="20"
+              height="20"
+              alt=""
+            />+20 100 123 4567</a
+          >
+          <form id="newsletter" action="#contact">
+            <label for="newsletter-email">Subscribe for travel deals</label>
+            <div class="newsletter-row">
+              <input
+                id="newsletter-email"
+                name="email"
+                type="email"
+                placeholder="Your email"
+                required
+              /><button class="button button-primary" type="submit">
+                Join
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-inner">
+          <span>© 2026 EgyTrips. All rights reserved.</span>
+          <div class="legal-links">
+            <a href="#contact">Privacy Policy</a
+            ><a href="#contact">Terms of Service</a
+            ><a href="#contact">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,403 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fffdf8;
+}
+
+a {
+  color: #f47b50;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Shared page layout */
+.auth-page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-card {
+  width: 95%;
+  height: 100vh;
+  display: flex;
+  gap: 60px;
+  background-color: #fffdf8;
+}
+
+.auth-img,
+.auth-content {
+  flex: 1;
+}
+
+.auth-img {
+  padding: 28px 0;
+}
+
+.auth-img img {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+
+.auth-content {
+  padding: 67px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Shared header */
+.auth-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.auth-heading {
+  margin-bottom: 40px;
+}
+
+.auth-heading p {
+  color: rgba(100, 116, 139, 1);
+}
+
+/* Shared form */
+.auth-form {
+  padding-left: 16px;
+}
+
+.auth-field {
+  padding-bottom: 20px;
+}
+
+.auth-field label {
+  display: block;
+  color: rgba(38, 70, 83, 1);
+}
+
+.auth-field input {
+  width: 100%;
+  padding: 16px;
+  background-color: rgba(240, 146, 92, 0.05);
+  border: 1.34px solid
+    var(--Colors-Primary-Alpha-10, rgba(240, 146, 92, 0.1));
+  border-radius: 999px;
+}
+
+.auth-btn {
+  width: 100%;
+  margin: 32px 0;
+  padding: 16px;
+  border: none;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #e76f51 0%, #f4a261 100%);
+  box-shadow: 0 4px 14px rgba(231, 111, 81, 0.4);
+  color: rgba(255, 255, 255, 1);
+  font-weight: 600;
+}
+
+.auth-switch {
+  margin-top: 32px;
+  color: #264653;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+}
+
+ 
+@media (max-width: 1200px) {
+  .auth-card {
+    width: calc(100% - 40px);
+    height: auto;
+    min-height: 100vh;
+    min-height: 100dvh;
+    gap: 32px;
+  }
+
+  .auth-img {
+    padding: 20px 0;
+  }
+
+  .auth-img img {
+    height: calc(100vh - 40px);
+    height: calc(100dvh - 40px);
+    object-fit: cover;
+  }
+
+  .auth-content {
+    padding: 40px;
+  }
+}
+
+ 
+@media (max-width: 900px) {
+  .auth-page {
+    min-height: 100vh;
+    min-height: 100dvh;
+    align-items: flex-start;
+  }
+
+  .auth-card {
+    display: block;
+    width: 100%;
+    min-height: auto;
+  }
+
+  .auth-img {
+    display: none;
+  }
+
+  .auth-content {
+    width: min(100%, 680px);
+    min-height: 100vh;
+    min-height: 100dvh;
+    margin-inline: auto;
+    padding: 48px 32px;
+  }
+
+  .auth-form {
+    padding-left: 0;
+  }
+}
+
+ 
+@media (max-width: 600px) {
+  .auth-content {
+    min-height: auto;
+    padding: 32px 16px;
+  }
+
+  .auth-logo img {
+    max-width: 170px;
+    height: auto;
+  }
+
+  .auth-heading {
+    margin-bottom: 30px;
+  }
+
+  .auth-heading h1 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .auth-heading p {
+    font-size: 14px;
+  }
+
+  .auth-field input {
+    padding: 14px 16px;
+  }
+
+  .auth-btn {
+    margin: 26px 0;
+    padding: 14px 16px;
+  }
+
+  .auth-switch {
+    margin-top: 28px;
+    font-size: 15px;
+  }
+}
+
+ 
+@media (max-width: 420px) {
+  .auth-content {
+    padding-inline: 14px;
+  }
+
+  .auth-switch a {
+    display: inline-block;
+  }
+}
+/* ==================== START LOGIN PAGE ==================== */
+
+/* Remember me and forgot password */
+.login-page .auth-form-options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-page .auth-check input {
+  width: 16px;
+  border-radius: 9999px;
+  padding-right: 10px;
+}
+
+.login-page .auth-form-options a {
+  color: rgba(237, 123, 57, 1);
+}
+
+.login-page .auth-divider {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.login-page .auth-divider::before,
+.login-page .auth-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: rgba(52, 95, 113, 1);
+}
+
+.login-page .auth-social {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.login-page .social-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 12px 80px;
+  background-color: #ffffff;
+  border: 1px solid #dfe3e8;
+  border-radius: 32px;
+  color: #4f5d75;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.login-page .social-btn img {
+  width: 26px;
+  object-fit: contain;
+}
+
+.login-page .social-btn--apple {
+  color: #111111;
+}
+
+.login-page .social-btn--apple img {
+  width: 28px;
+}
+
+.login-page .social-btn:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1200px) {
+  .login-page .social-btn {
+    padding: 12px 24px;
+  }
+}
+
+@media (max-width: 900px) {
+  .login-page .auth-social {
+    gap: 20px;
+  }
+
+  .login-page .social-btn {
+    min-width: 0;
+    padding: 12px 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .login-page .auth-form-options {
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+  }
+
+  .login-page .auth-divider {
+    font-size: 14px;
+  }
+
+  .login-page .auth-social {
+    gap: 12px;
+  }
+
+  .login-page .social-btn {
+    padding: 11px 12px;
+    font-size: 15px;
+  }
+
+  .login-page .social-btn img,
+  .login-page .social-btn--apple img {
+    width: 22px;
+  }
+}
+
+@media (max-width: 420px) {
+  .login-page .auth-form-options {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .login-page .auth-social {
+    flex-direction: column;
+  }
+}
+
+/* ======= END LOGIN PAGE =========*/
+
+/* ==================== START SIGNUP PAGE ==================== */
+/* ==================== END SIGNUP PAGE ==================== */
+
+/* ====================  Start Forget-pass PAGE ==================== */
+.auth-btn a{
+    text-decoration: none;
+    color:#FFFFFF;
+}
+/* ==================== END Forget-pass PAGE ==================== */
+
+/* ==================== START Verfiy PAGE ==================== */
+.verify-page .verify-form {
+  padding-left: 0;
+}
+.verfiy-page .verfiy-form .otp-inputs{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+.verfiy-page .verfiy-form .otp-inputs .otp-input{
+    width: 64px ;
+    height: 64px;
+    padding: 0;
+    border: 1px solid var(--Colors-Secondary-700, rgba(52, 95, 113, 1));
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    outline: none;
+    color: rgba(52, 95, 113, 1);
+;
+}
+.verfiy-page .verfiy-form .otp-inputs .otp-input:focus{
+    background: var(--Colors-Secondary-Alpha-10, rgba(38, 70, 83, 0.1));
+    border: 1px solid var(--Colors-Secondary-600, rgba(65, 120, 142, 1));
+}
+.verfiy-page .verfiy-form .otp-timer {
+  margin-top: 14px;
+  color: #345f71;
+  font-size: 14px;
+  text-align: center;
+  color: rgba(52, 95, 113, 1);
+;
+}
+/* ==================== END Verfiy PAGE ==================== 
